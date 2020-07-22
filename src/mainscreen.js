@@ -58,6 +58,8 @@ const Root = () => {
     return (
       <View>
         <Text>{category.id}</Text>
+        <Text>asdasda</Text>
+        <Text>asdasda</Text>
         <Text>{category.name}</Text>
       </View>
     );
