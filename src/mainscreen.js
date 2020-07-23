@@ -8,6 +8,7 @@ import {
   gql,
   useQuery,
 } from '@apollo/client';
+import {EndPoint} from './utils/apiEndpoint';
 
 const getCategories = gql`
   query($first: Int!, $page: Int!) {
@@ -58,9 +59,8 @@ const Root = () => {
     return (
       <View>
         <Text>{category.id}</Text>
-        <Text>asdasda</Text>
-        <Text>asdasda</Text>
         <Text>{category.name}</Text>
+        <Text>{EndPoint.API.BASE_URL}</Text>
       </View>
     );
   });
